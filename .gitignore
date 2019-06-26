@@ -1,0 +1,5 @@
+#Database configs
+dicom-archive/.loris_mri/*
+
+#Python virtual env
+python_virtualenvs/*

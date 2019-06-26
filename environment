@@ -1,0 +1,17 @@
+export PATH=/opt/minc/1.9.16/bin:/data/loris/bin/mri:/data/loris/bin/mri/uploadNeuroDB:/data/loris/bin/mri/uploadNeuroDB/bin:/data/loris/bin/mri/dicom-archive:/data/loris/bin/mri/python:/data/loris/bin/mri/python/react-series-data-viewer:$PATH
+export PERL5LIB=/data/loris/bin/mri/uploadNeuroDB:/data/loris/bin/mri/dicom-archive:$PERL5LIB
+export TMPDIR=/tmp
+export LORIS_CONFIG=/data/loris/bin/mri/dicom-archive
+
+# for the Python scripts
+export LORIS_MRI=/data/loris/bin/mri
+export PYTHONPATH=$PYTHONPATH:/data/loris/bin/mri/python:/data/loris/bin/mri/python/react-series-data-viewer
+source /data/loris/bin/mri/python_virtualenvs/loris-mri-python/bin/activate
+
+# to source the MINC toolkit
+source /opt/minc/1.9.16/minc-toolkit-config.sh
+umask 0002
+
+# for the defacing scripts
+export BEASTLIB=/opt/minc/1.9.16/../share/beast-library-1.1
+export MNI_MODELS=/opt/minc/1.9.16/../share/icbm152_model_09c
