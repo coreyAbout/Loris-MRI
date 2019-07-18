@@ -1,6 +1,6 @@
 export PATH=/opt/minc/1.9.16/bin:/data/loris/bin/mri:/data/loris/bin/mri/uploadNeuroDB:/data/loris/bin/mri/uploadNeuroDB/bin:/data/loris/bin/mri/dicom-archive:/data/loris/bin/mri/python:/data/loris/bin/mri/python/react-series-data-viewer:$PATH
 export PERL5LIB=/data/loris/bin/mri/uploadNeuroDB:/data/loris/bin/mri/dicom-archive:$PERL5LIB
-export TMPDIR=/tmp
+export TMPDIR=/data/not_backed_up
 export LORIS_CONFIG=/data/loris/bin/mri/dicom-archive
 
 # for the Python scripts
