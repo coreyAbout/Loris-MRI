@@ -113,7 +113,7 @@ my @row=();
 (my $query = <<QUERY) =~ s/\n/ /gm;
 SELECT UploadID, UploadLocation FROM mri_upload 
     WHERE Inserting IS NULL AND InsertionComplete <> 1 
-        AND (TarchiveID IS NULL AND number_of_mincInserted IS NULL);
+        AND (TarchiveID IS NULL AND number_of_mincInserted IS NULL) AND IsAnimal='N';
 QUERY
 print "\n" . $query . "\n" if $debug;
 my $sth = $dbh->prepare($query);
